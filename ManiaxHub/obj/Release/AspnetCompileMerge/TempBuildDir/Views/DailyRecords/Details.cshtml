@@ -1,0 +1,98 @@
+﻿@model ManiaxHub.Models.DailyRecord
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DailyRecord</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RecordDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecordDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Coins)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Coins)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Food)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Food)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.StartingTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartingTime)
+        </dd>*@
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.EndingTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndingTime)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Balance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Credit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Credit)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Debit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Debit)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.CustomerName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RecordID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

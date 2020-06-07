@@ -1,0 +1,23 @@
+﻿<div class="form-group pull-in clearfix" style="padding-left: 30px">
+    <div class="col-sm-5">
+        <div id="txtBox">
+            @Html.Label("Search Record", new { @id = "lblSearch" })
+            <input type="text" name="Data" value="@ViewBag.Data" class="form-control" autocomplete="off" id="txtSearch" />
+        </div>
+    </div>
+    <div style="margin-top: 26px;">
+        <div id="radioList" class="col-sm-4">
+            @Html.RadioButton("SearchType", "All", true, new { @id = "btnAllrecord" })
+            @Html.Label("All")
+            @Html.RadioButton("SearchType", "Date", false, new { @id = "btnDateSearch" })
+            @Html.Label("Date")
+            @Html.RadioButton("SearchType", "CustomerID", false, new { @id = "btnCustomerSearch" })
+            @Html.Label("Customer Name")
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div id="btnSearch">
+            <input type="submit" value="Search" class="btn btn-sm btn btn-primary" id="btnSubmit" />
+        </div>
+    </div>
+</div>

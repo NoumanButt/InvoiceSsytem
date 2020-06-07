@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -ManiaX App</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <link href="~/Content/SearchContainer.css" rel="stylesheet" />
+    
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/Functions.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*<a href="~/tblLogins/LogOut">logOut</a>*@
+                @*@Html.ActionLink("LogOut", "LogOut", "tblLogins", new { @class = "navbar-brand" })*@
+            </div>
+            <div class="pull-right">
+                <a href="@Url.Action("LogOut", "tblLogins")" class="btn btn-sm btn navbar-brand">LogOut</a>
+            </div>
+            <div>
+                @{
+
+                }
+                
+                <img src="~/Image/IMG-20190621-WA0008.jpg" style="height="100px;" width="50px;" />
+                <a href="@Url.Action("Index", "DailyRecords")" style="color:white; margin-top:10px; font-size:30px;  text-decoration: none; font-family: Pristina"> Maniax Gaming Hub </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        @*<footer>
+                <p>&copy; @DateTime.Now.Year - "Nouman Mahmood  Butt"</p>
+            </footer>*@
+    </div>
+</body>
+</html>

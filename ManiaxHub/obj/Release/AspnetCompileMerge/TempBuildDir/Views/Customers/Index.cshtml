@@ -1,0 +1,61 @@
+﻿@model IEnumerable<ManiaxHub.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2> Registered Customers </h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BloodGroup)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Credit)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Debit)
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BloodGroup)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Credit)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Debit)
+        </td>*@
+        <td>
+            <a href="@Url.Action("Edit", "Customers", new { ID = item.CustomerID })" class="btn btn-sm btn btn-success">Edit</a>
+            @*@Html.ActionLink("Edit", "Edit", new { id = item.CustomerID })*@
+            @*@Html.ActionLink("Details", "Details", new { id=item.CustomerID }) |
+        @Html.ActionLink("Delete", "Delete", new { id=item.CustomerID })*@
+        </td>
+    </tr>
+}
+
+</table>

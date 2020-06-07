@@ -1,0 +1,163 @@
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\csc.exe
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\csc.exe.config
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\csc.rsp
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\csi.exe
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\csi.rsp
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\System.AppContext.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\System.Collections.Immutable.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\System.IO.FileSystem.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\System.Reflection.Metadata.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\vbc.exe
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\vbc.exe.config
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\vbc.rsp
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\VBCSCompiler.exe
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\roslyn\VBCSCompiler.exe.config
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\ManiaxHub.dll.config
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\ManiaxHub.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\ManiaxHub.pdb
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\EntityFramework.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\EntityFramework.SqlServer.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\Microsoft.Web.Infrastructure.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Helpers.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Mvc.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Razor.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Deployment.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Razor.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\EntityFramework.xml
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\EntityFramework.SqlServer.xml
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Razor.xml
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.xml
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Deployment.xml
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Razor.xml
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Helpers.xml
+E:\MVC Practice\ManiaxHub\ManiaxHub\bin\System.Web.Mvc.xml
+E:\MVC Practice\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.dll
+E:\MVC Practice\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.pdb
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\csc.exe
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\csc.exe.config
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\csc.rsp
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\csi.exe
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\csi.rsp
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\System.AppContext.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\System.Collections.Immutable.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\System.IO.FileSystem.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\System.Reflection.Metadata.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\vbc.exe
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\vbc.exe.config
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\vbc.rsp
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\VBCSCompiler.exe
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\roslyn\VBCSCompiler.exe.config
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\ManiaxHub.dll.config
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\ManiaxHub.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\ManiaxHub.pdb
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\EntityFramework.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\EntityFramework.SqlServer.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\Microsoft.Web.Infrastructure.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Helpers.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Mvc.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Razor.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Deployment.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Razor.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\EntityFramework.xml
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\EntityFramework.SqlServer.xml
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Razor.xml
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.xml
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Deployment.xml
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Razor.xml
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Helpers.xml
+E:\sirf yei folder\ManiaxHub\ManiaxHub\bin\System.Web.Mvc.xml
+E:\sirf yei folder\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.csproj.CoreCompileInputs.cache
+E:\sirf yei folder\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.csproj.CopyComplete
+E:\sirf yei folder\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.dll
+E:\sirf yei folder\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.pdb
+E:\sirf yei folder\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.csprojAssemblyReference.cache
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\csc.exe
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\csc.exe.config
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\csc.rsp
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\csi.exe
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\csi.rsp
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\System.AppContext.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\System.Collections.Immutable.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\System.IO.FileSystem.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\System.Reflection.Metadata.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\vbc.exe
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\vbc.exe.config
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\vbc.rsp
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\VBCSCompiler.exe
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\roslyn\VBCSCompiler.exe.config
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\ManiaxHub.dll.config
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\ManiaxHub.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\ManiaxHub.pdb
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\EntityFramework.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\EntityFramework.SqlServer.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\Microsoft.Web.Infrastructure.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\Newtonsoft.Json.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Net.Http.Formatting.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Helpers.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Http.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Http.WebHost.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Mvc.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Razor.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Deployment.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Razor.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\EntityFramework.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\EntityFramework.SqlServer.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\Newtonsoft.Json.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Net.Http.Formatting.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Http.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Http.WebHost.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Razor.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Deployment.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Webpages.Razor.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Helpers.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\bin\System.Web.Mvc.xml
+E:\ManiaxHub\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.csproj.CopyComplete
+E:\ManiaxHub\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.dll
+E:\ManiaxHub\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.pdb
+E:\ManiaxHub\ManiaxHub\ManiaxHub\obj\Debug\ManiaxHub.csprojAssemblyReference.cache

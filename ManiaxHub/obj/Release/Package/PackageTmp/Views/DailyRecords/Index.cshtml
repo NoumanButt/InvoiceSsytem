@@ -1,0 +1,166 @@
+﻿@model IEnumerable<ManiaxHub.Models.DailyRecord>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2 style="text-align:center; display:none"> ManiaX Gaming Hub </h2>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var URL = "/DailyRecords/";
+        @*var message = '@(TempData["ErrorMessage"])';
+        var Validation = '@(TempData["Validation"])';*@
+        $(function () {
+            $("#txtSearch").focusin(function () {
+                var DateChecked = $("#btnDateSearch").prop("checked");
+                var EmpName = $("#btnCustomerSearch").prop("checked");
+                if (DateChecked == true) {
+                    $("#txtSearch").datepicker({
+                        dateFormat: 'dd-M-yy',
+                    });
+                    $("input#txtSearch").val();
+                } else {
+                    BindEmployeeName();
+                }
+                PRMSSFocusin(URL);
+            });
+            
+            var searchType = '@ViewBag.SearchType'
+            Search(searchType);
+        });
+    });
+    // CustomerList ... 
+    function BindEmployeeName() {
+        $("#txtSearch").autocomplete({
+            source: '@Url.Action("CustomersList")',
+            select: function (event, ui) {
+                $("#txtSearch").val(ui.item.label);
+                $.ajax({
+                    type: "POST",
+                    url: "/DailyRecords/CustomerCodeID",
+                    data: { label: ui.item.value, },
+                    success: function (message) {
+                        if (message.data = true) {
+                        }
+                    },
+                    dataType: 'json'
+                });
+                return false;
+            },
+            minLength: 0,
+            scroll: true
+        }).focus(function () {
+            $(this).autocomplete("search", "");
+        });
+    }  
+</script>
+
+<div id="SearchContainer" style="margin-top:50px">
+    @using (Html.BeginForm("Index", "DailyRecords", FormMethod.Get, new { @class = "Search-form" }))
+    {
+        @Html.Partial("_DailyRecords_Index_Search")
+    }
+</div>
+<div class="alert" id="Status" style="display:none">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <i class="fa fa-ok-sign"></i>
+    <strong id="message">
+    </strong>
+</div>
+
+<div>
+    <div class="pull-right">
+        <p>
+            <a href="@Url.Action("Index", "Customers")" class="btn btn-sm btn-warning">Customers Detail</a>
+            <a href="@Url.Action("Create", "Customers")" class="btn btn-sm btn-warning">Register New Customer</a>
+        </p>
+    </div>
+    <p>
+        <a href="@Url.Action("Create", "DailyRecords")" class="btn btn-sm btn-warning">Add New Record</a>
+        @*@Html.ActionLink("Add New Record", "Create")*@
+    </p>
+</div>
+
+<table class="table" style="border:3px solid black;">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecordDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Coins)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Food)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartingTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndingTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Balance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Credit)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Debit)
+            </th>*@
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Customer.CustomerName)
+            </td>
+            <td>
+                @Convert.ToDateTime(item.RecordDate).ToString("dd-MM-yyyy")
+                @*@Html.DisplayFor(modelItem => item.RecordDate)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Coins)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Food)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartingTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndingTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Balance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Credit)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Debit)
+                </td>*@
+
+            <td>
+                <a href="@Url.Action("Edit", "DailyRecords", new { ID = item.RecordID })" class="btn btn-sm btn btn-success">Edit</a>
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.RecordID }) |*@
+                @*<a href="@Url.Action("Details", "DailyRecords", new { ID = item.RecordID })" class="btn btn-sm btn btn-success">Details</a>*@
+                @*@Html.ActionLink("Details", "Details", new { id = item.RecordID }) |*@
+                @*<a href="@Url.Action("Delete", "DailyRecords", new { ID = item.RecordID })" class="btn btn-sm btn btn-danger">Delete</a>*@
+                @*@Html.ActionLink("Delete", "Delete", new { id = item.RecordID })*@
+            </td>
+        </tr>
+    }
+
+</table>

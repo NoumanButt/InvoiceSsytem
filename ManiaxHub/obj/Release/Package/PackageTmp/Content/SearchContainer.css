@@ -1,0 +1,15 @@
+﻿#SearchContainer {
+    height: 120px;
+    width: 100%;
+    border: 2px;
+    padding-top: 23px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+#lblSearch {
+    font-weight: bold;
+    font-size: 15px;
+}

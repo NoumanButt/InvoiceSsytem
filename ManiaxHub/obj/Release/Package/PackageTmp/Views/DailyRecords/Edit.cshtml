@@ -1,0 +1,306 @@
+﻿@model ManiaxHub.Models.DailyRecord
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#txtEndingTime").timepicker({
+            noneOption: false,
+            interval: 15,
+            showDuration: true
+        });
+        
+
+        $("#txtCoins").focus();
+
+
+        $("#txtCoins").change(function () {
+            
+            var Coins = $("#txtCoins").val();
+            var Food = $("#txtFood").val();
+            var Balance = $("#txtBalance").val();
+            var cr = $("#txtCredit").val();
+            var CoinsAmount = parseInt(parseInt(Coins) * 4);
+
+            if (Coins != "" && Coins != null && Food != "" && Food != null) {
+                var TotalAmount = (CoinsAmount + parseInt(Food));
+                $("#txtTotalAmount").val(TotalAmount);
+            } else if (Food != "" && Food != null) {
+                $("#txtCoins").val(0);
+                var Coins = $("#txtCoins").val();
+                var CoinsAmount = parseInt(parseInt(Coins) * 4);
+                var Food = $("#txtFood").val();
+                $("#txtTotalAmount").val((CoinsAmount) + parseInt(Food));
+                //$("#txtTotalAmount").val(TotalAmount);
+            } else {
+                $("#txtCoins").val(0);
+                $("#txtFood").val(0);
+                var Food = $("#txtFood").val();
+                $("#txtTotalAmount").val(Food);
+
+            }
+            var TotalAmount = $("#txtTotalAmount").val();
+            var Balance = $("#txtBalance").val();
+            var Credit = ((parseInt(TotalAmount)) - (parseInt(Balance)));
+            $("#txtCredit").val((parseInt(cr)) + (parseInt(Credit)));
+        });
+
+
+
+
+        //$("#txtCoins").focusout(function () {
+        //    
+        //    var Coins = $("#txtCoins").val();
+        //    var Food = $("#txtFood").val();
+        //    var Balance = $("#txtBalance").val();
+        //    var CoinsAmount = parseInt(parseInt(Coins) * 4);
+
+        //    if (Coins != "" && Coins != null && Food != "" && Food != null) {
+        //        var TotalAmount = (CoinsAmount + parseInt(Food));
+        //        $("#txtTotalAmount").val(TotalAmount);
+        //    } else if (Food != "" && Food != null) {
+        //        $("#txtCoins").val(0);
+        //        var Coins = $("#txtCoins").val();
+        //        var CoinsAmount = parseInt(parseInt(Coins) * 4);
+        //        var Food = $("#txtFood").val();
+        //        $("#txtTotalAmount").val((CoinsAmount) + parseInt(Food));
+        //        //$("#txtTotalAmount").val(TotalAmount);
+        //    } else {
+        //        $("#txtCoins").val(0);               
+        //        $("#txtFood").val(0);
+        //        var Food = $("#txtFood").val();
+        //        $("#txtTotalAmount").val(Food);
+                
+        //           }
+        //    var TotalAmount = $("#txtTotalAmount").val();
+        //    var Balance = $("#txtBalance").val();
+        //    var Credit = ((parseInt(TotalAmount)) - (parseInt(Balance)));
+        //    $("#txtCredit").val(Credit);
+        //});
+
+
+        $("#txtFood").change(function () {
+            
+            var Food = $("#txtFood").val();
+            var cr = $("#txtCredit").val();
+            var TotalAmount = $("#txtTotalAmount").val();
+            var Coins = $("#txtCoins").val();
+            var CoinsAmount = parseInt(parseInt(Coins) * 4);
+            if (Food != "" && Food != null) {
+                $("#txtTotalAmount").val((parseInt(CoinsAmount)) + (parseInt(Food)));
+                var Balance = $("#txtBalance").val();
+                var TotalAmount = $("#txtTotalAmount").val();
+                var Credit = ((parseInt(TotalAmount)) - (parseInt(Balance)));
+                $("#txtCredit").val(((parseInt(cr)) - (parseInt(CoinsAmount))) + (parseInt(Credit)));
+            } else {
+                $("#txtFood").val(0);
+                var Coins = $("#txtCoins").val();
+                var CoinsAmount = parseInt(parseInt(Coins) * 4);
+                $("#txtTotalAmount").val(CoinsAmount);
+                var TotalAmount = $("#txtTotalAmount").val();
+                var Balance = $("#txtBalance").val();
+                var Credit = ((parseInt(TotalAmount)) - (parseInt(Balance)));
+                $("#txtCredit").val(((parseInt(cr)) - (parseInt(CoinsAmount))) + (parseInt(Credit)));
+                // $("#txtCredit").val((parseInt(cr)) + (parseInt(Credit)));
+
+            }
+        });
+
+
+        //$("#txtFood").focusout(function () {
+        //    
+        //    var Food = $("#txtFood").val();
+        //    var TotalAmount = $("#txtTotalAmount").val();
+        //    var Coins = $("#txtCoins").val();
+        //    var CoinsAmount = parseInt(parseInt(Coins) * 4);
+        //    if (Food != "" && Food != null) {
+        //        $("#txtTotalAmount").val((parseInt(CoinsAmount)) + (parseInt(Food)));
+        //        var Balance = $("#txtBalance").val();
+        //        var TotalAmount = $("#txtTotalAmount").val();
+        //        var Credit = ((parseInt(TotalAmount)) - (parseInt(Balance)));
+        //        $("#txtCredit").val(Credit);
+        //    } else {
+        //        $("#txtFood").val(0);
+        //        var Coins = $("#txtCoins").val();
+        //        var CoinsAmount = parseInt(parseInt(Coins) * 4);
+        //        $("#txtTotalAmount").val(CoinsAmount);
+        //        var TotalAmount = $("#txtTotalAmount").val();
+        //        var Balance = $("#txtBalance").val();
+        //        var Credit = ((parseInt(TotalAmount)) - (parseInt(Balance)));
+        //        $("#txtCredit").val(Credit);
+               
+        //    }
+        //});
+        $("#txtBalance").change(function () {
+            
+            var TotalAmount = $("#txtTotalAmount").val();
+            var Balance = $("#txtBalance").val();
+            var cr = $("#txtCredit").val();
+            var Credit = ((parseInt(cr)) - (parseInt(Balance)));
+            $("#txtCredit").val(Credit);
+        });
+
+        //$('#setStartTimeButton').on('click', function () {
+        //    $('#txtStartingTime').timepicker('setTime', new Date());
+        //});
+
+        $('#setEndTimeButton').on('click', function () {
+            
+            $('#txtEndingTime').timepicker('setTime', new Date());
+            
+            var start_time = $("#txtStartingTime").val();
+            var end_time = $("#txtEndingTime").val();
+            //var diff = (new Date("1970-1-1 " + end_time) - new Date("1970-1-1 " + start_time)) / 1000;
+            //diff /= 60;
+            //var min = Math.abs(Math.round(diff));
+
+            // code for calculating hours
+            var diff = (new Date("1970-1-1 " + end_time) - new Date("1970-1-1 " + start_time)) / 1000 / 60;
+            var TimeAmount = parseFloat(diff) * parseFloat(250 / 60);
+            var TotalAmount = $("#txtTotalAmount").val();
+            $("#txtTotalAmount").val((parseInt(TimeAmount)) + (parseInt(TotalAmount)));
+
+            var TA = $("#txtTotalAmount").val();
+            var cr = $("#txtCredit").val();
+            var Balance = $("#txtBalance").val();
+            var NewTA = ((parseInt(TA)) - (parseInt(TotalAmount)));
+            var Credit = ((parseInt(NewTA)) + (parseInt(cr)));
+            $("#txtCredit").val(((parseInt(Credit)) - (parseInt(Balance))));
+        });
+
+
+
+    });
+</script>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>DailyRecord</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.RecordID)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CustomerID, "CustomerID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("CustomerID", null, htmlAttributes: new { @class = "form-control" , @readonly = true})
+            @Html.ValidationMessageFor(model => model.CustomerID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.RecordDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.RecordDate, new { htmlAttributes = new { @class = "form-control datepicker", @id = "txtRecordDate", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.RecordDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Coins, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Coins, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @id = "txtCoins" , @readonly = true }  })
+            @Html.ValidationMessageFor(model => model.Coins, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Food, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Food, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @id = "txtFood" , @readonly = true } })
+            @Html.ValidationMessageFor(model => model.Food, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.StartingTime, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.StartingTime, new { htmlAttributes = new { @class = "form-control timepicker", @id = "txtStartingTime", @autocomplete = "off", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.StartingTime, "", new { @class = "text-danger" })
+            @*<div>
+                <input type="button" value="Set Starting Time" id="setStartTimeButton" />
+            </div>*@
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.EndingTime, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.EndingTime, new { htmlAttributes = new { @class = "form-control timepicker", @id = "txtEndingTime", @autocomplete = "off", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.EndingTime, "", new { @class = "text-danger" })
+            <div>
+                <input type="button" value="Set Ending Time" id="setEndTimeButton" />
+            </div>
+        </div>
+    </div>
+
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.StartingTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.StartingTime, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.StartingTime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EndingTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.EndingTime, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.EndingTime, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TotalAmount, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TotalAmount, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @id = "txtTotalAmount", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.TotalAmount, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Balance, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Balance, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @id = "txtBalance" } })
+            @Html.ValidationMessageFor(model => model.Balance, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Credit, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Credit, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @id = "txtCredit", @readonly = true, @value = ViewBag.Credit } })
+            @Html.ValidationMessageFor(model => model.Credit, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.Debit, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Debit, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @id = "txtDebit", @readonly = true, @value = ViewBag.Debit } })
+                @Html.ValidationMessageFor(model => model.Debit, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" id="btnSave" value="Save" class="btn btn-default " />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
